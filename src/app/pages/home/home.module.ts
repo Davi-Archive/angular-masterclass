@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from 'src/app/shared/components/components.module';
+import { FormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -16,11 +16,10 @@ import { ComponentsModule } from 'src/app/shared/components/components.module';
     CommonModule,
     HomeRoutingModule,
     RouterModule,
-    FormsModule,
-    ComponentsModule
-  ],
-  exports:[
+    ComponentsModule,
     FormsModule
+  ],
+  exports: [
   ]
 })
 export class HomeModule { }

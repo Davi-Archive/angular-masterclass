@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './pages/home/home.module';
 import { ComponentsModule } from './shared/components/components.module';
 import { DiretivasComponent } from './pages/diretivas/diretivas.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +19,10 @@ import { DiretivasComponent } from './pages/diretivas/diretivas.component';
     AppRoutingModule,
     HomeModule,
     ComponentsModule,
+    FormsModule
+  ],
+  exports: [
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
