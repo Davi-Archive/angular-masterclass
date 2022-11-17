@@ -1,0 +1,10 @@
+<div class="content" role="main">
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+    <span>{{ title }} app is running!</span>
+    <input type="text" [(ngModel)]="title" />
+    <input type="text" [(ngModel)]="twoWay" />
+    <p>{{ twoWay }}</p>
+    <app-button (CLICK)="test()"></app-button>
+  </div>
+</div>
