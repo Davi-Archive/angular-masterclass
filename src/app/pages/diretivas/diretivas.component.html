@@ -27,5 +27,11 @@
 </div>
 <button (click)="increase()">aumentar</button>
 
-<h1 [ngClass]="">CHANGE ME! NOW</h1>
+<h1 [ngClass]="cssClassSaver">
+  {{ cssClassSaver === "disabled" ? "THANKS" : "CHANGE ME! NOW" }}
+</h1>
 <button (click)="changeCssStyle()">Change it</button>
+
+<h1 [ngStyle]="{ background: bgColor, color: textColor }">
+  my style is not here :)
+</h1>

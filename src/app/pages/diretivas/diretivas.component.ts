@@ -11,7 +11,9 @@ export class DiretivasComponent implements OnInit {
   public arrayFromApi: string[] = ['1', '2', '3', '4', '5'];
   public itemToAdd: any = '';
   public valueTest: number = 0;
-  public cssClassSaver: string = '';
+  public cssClassSaver: string = 'enabled';
+  public bgColor: string = 'red';
+  public textColor: string = 'yellow';
 
   constructor() { }
 
@@ -38,7 +40,7 @@ export class DiretivasComponent implements OnInit {
     if (this.cssClassSaver === 'disabled') {
       this.cssClassSaver = 'enabled'
     } else {
-      this.cssClassSaver === 'disabled'
+      this.cssClassSaver = 'disabled'
     }
   }
 
