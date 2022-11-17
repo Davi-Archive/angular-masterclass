@@ -18,6 +18,9 @@ import { ComponentsModule } from 'src/app/shared/components/components.module';
     RouterModule,
     FormsModule,
     ComponentsModule
+  ],
+  exports:[
+    FormsModule
   ]
 })
 export class HomeModule { }

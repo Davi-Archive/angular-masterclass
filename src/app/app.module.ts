@@ -7,6 +7,7 @@ import { HomeModule } from './pages/home/home.module';
 import { ComponentsModule } from './shared/components/components.module';
 import { DiretivasComponent } from './pages/diretivas/diretivas.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { DiretivasComponent } from './pages/diretivas/diretivas.component';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

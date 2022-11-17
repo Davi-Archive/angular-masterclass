@@ -1,1 +1,31 @@
-<p>diretivas works!</p>
+<p *ngIf="showAndHide">amigo</p>
+<button (click)="showOrHideComponent()">
+  {{ showAndHide ? "HIDE" : "SHOW" }}
+</button>
+<ul>
+  <li
+    *ngFor="let array of arrayFromApi; let i = index"
+    (click)="removerItem(i)"
+  >
+    {{ array }}<strong>{{ i }}</strong>
+  </li>
+</ul>
+<input [(ngModel)]="itemToAdd" />
+<button (click)="addOneItemToTheList()">ADD ITEM</button>
+
+<div [ngSwitch]="valueTest">
+  <p *ngSwitchCase="1">O</p>
+  <p *ngSwitchCase="2">K</p>
+  <p *ngSwitchCase="3">A</p>
+  <p *ngSwitchCase="4">Y</p>
+  <p *ngSwitchCase="5">C</p>
+  <p *ngSwitchCase="6">H</p>
+  <p *ngSwitchCase="7">A</p>
+  <p *ngSwitchCase="8">M</p>
+  <p *ngSwitchCase="9">P</p>
+  <p *ngSwitchDefault>default</p>
+</div>
+<button (click)="increase()">aumentar</button>
+
+<h1 [ngClass]="">CHANGE ME! NOW</h1>
+<button (click)="changeCssStyle()">Change it</button>

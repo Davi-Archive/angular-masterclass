@@ -6,5 +6,11 @@
     <input type="text" [(ngModel)]="twoWay" />
     <p>{{ twoWay }}</p>
     <app-button (CLICK)="test()"></app-button>
+    <nav class="links">
+      <ul>
+        <li (click)="goToLifecycle()">LIFECYCLE</li>
+        <li (click)="goToDiretivas()">Diretivas</li>
+      </ul>
+    </nav>
   </div>
 </div>
